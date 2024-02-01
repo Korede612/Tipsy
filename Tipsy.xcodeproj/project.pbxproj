@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		938576622B681E710063E39E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938576612B681E710063E39E /* AppDelegate.swift */; };
 		938576642B681E710063E39E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938576632B681E710063E39E /* SceneDelegate.swift */; };
-		938576662B681E710063E39E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938576652B681E710063E39E /* ViewController.swift */; };
+		938576662B681E710063E39E /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938576652B681E710063E39E /* TipsViewController.swift */; };
 		938576692B681E710063E39E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938576672B681E710063E39E /* Main.storyboard */; };
 		9385766B2B681E730063E39E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9385766A2B681E730063E39E /* Assets.xcassets */; };
 		9385766E2B681E730063E39E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9385766C2B681E730063E39E /* LaunchScreen.storyboard */; };
+		938576762B68424F0063E39E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938576752B68424F0063E39E /* ResultViewController.swift */; };
+		9385767B2B6848840063E39E /* TipsBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9385767A2B6848840063E39E /* TipsBrain.swift */; };
+		9385767D2B6848B00063E39E /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9385767C2B6848B00063E39E /* Tips.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9385765E2B681E710063E39E /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		938576612B681E710063E39E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		938576632B681E710063E39E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		938576652B681E710063E39E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		938576652B681E710063E39E /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		938576682B681E710063E39E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9385766A2B681E730063E39E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9385766D2B681E730063E39E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9385766F2B681E730063E39E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		938576752B68424F0063E39E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		9385767A2B6848840063E39E /* TipsBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsBrain.swift; sourceTree = "<group>"; };
+		9385767C2B6848B00063E39E /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		938576602B681E710063E39E /* Tipsy */ = {
 			isa = PBXGroup;
 			children = (
+				938576792B6848720063E39E /* Model */,
 				938576612B681E710063E39E /* AppDelegate.swift */,
 				938576632B681E710063E39E /* SceneDelegate.swift */,
-				938576652B681E710063E39E /* ViewController.swift */,
-				938576672B681E710063E39E /* Main.storyboard */,
+				938576772B68431B0063E39E /* Controller */,
+				938576782B68432B0063E39E /* View */,
 				9385766A2B681E730063E39E /* Assets.xcassets */,
 				9385766C2B681E730063E39E /* LaunchScreen.storyboard */,
 				9385766F2B681E730063E39E /* Info.plist */,
 			);
 			path = Tipsy;
+			sourceTree = "<group>";
+		};
+		938576772B68431B0063E39E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				938576652B681E710063E39E /* TipsViewController.swift */,
+				938576752B68424F0063E39E /* ResultViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		938576782B68432B0063E39E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				938576672B681E710063E39E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		938576792B6848720063E39E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9385767A2B6848840063E39E /* TipsBrain.swift */,
+				9385767C2B6848B00063E39E /* Tips.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				938576662B681E710063E39E /* ViewController.swift in Sources */,
+				938576662B681E710063E39E /* TipsViewController.swift in Sources */,
 				938576622B681E710063E39E /* AppDelegate.swift in Sources */,
 				938576642B681E710063E39E /* SceneDelegate.swift in Sources */,
+				938576762B68424F0063E39E /* ResultViewController.swift in Sources */,
+				9385767B2B6848840063E39E /* TipsBrain.swift in Sources */,
+				9385767D2B6848B00063E39E /* Tips.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
